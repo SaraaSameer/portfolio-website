@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="profile">
+				<img src="profile.jpeg" alt="Profile Picture">
+			</div>
+			<div class="title">
+				<h1>Hi, I'm Sara Sameer</h1>
+				<h2>Data Scientist</h2>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<section id="projects">
+		<div class="container">
+			<h2>Projects</h2>
+			<input type="text" id="project-search" placeholder="Filter projects...">
+			<ul id="project-list">
+				<li>
+					<h3>Final Year Project - Automated Essay Scoring</h3>
+					<p class="tech">Technology used: Python, Tensorflow, Scikit-Learn, Neptune, Flask</p>
+					<p> Conducted exploratory data analysis, feature engineering, model logging, model
+                        training, and optimization on the Hewlett Foundation dataset hosted on Kaggle.
+                        Utilized Python and natural language processing techniques to develop the
+                        automated grading solution.</p>
+				</li>
+				<li>
+					<h3>MATH189R Project - Cervical Cancer Risk Analysis</h3>
+					<p class="tech">Technology used: Python, Matplotlib, Scikit-Learn</p>
+					<p>Performed data cleaning and subsequently trained two classification models in
+                        Python: Logistic Regression and Support Vector Classifier (SVC).Both models
+                        were evaluated using appropriate metrics to assess their performance.</p>
+				</li>
+				<li>
+					<h3>5th Semester Project - GariKaro Web Application</h3>
+					<p class="tech">Technology used: ReactJS, NodeJS, MySQL, Google Map APIs</p>
+					<p> Developed a full-stack intra-university carpooling application using ReactJS for the
+                        front-end, MySQL for the database, and NodeJS for the back-end. Integrated Google Maps 
+                        API for route navigation and map visualization.</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section id="education">
+		<div class="container">
+			<h2>Education</h2>
+			<ul>
+				<li>
+					<h4>FAST NUCES Karachi</h4>
+					<p>Bachelor's degree in Computer Science</p>
+					<p>Graduated in 2023</p>
+				</li>
+				<li>
+					<h4>Harvey Mudd College</h4>
+					<p>Summer Exchange Student</p>
+					<p>Graduated in 2021</p>
+				</li>
+                <li>
+					<h4>Aga Khan Higher Secondary School, Karachi</h4>
+					<p>Intermediate in General Science</p>
+					<p>Graduated in 2019</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section id="contact">
+		<div class="container">
+			<h2>Contact Me</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				
+				<input type="submit" value="Send">
+			</form>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<p>&copy; Sara Sameer</p>
+		</div>
+	</footer>
+	
+	<script src="script01.js">
